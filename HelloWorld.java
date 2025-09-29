@@ -1,6 +1,6 @@
 /**
  * All java source code files have .java extension. 
- * This .java file is compiled using javac command to produce a .class file.
+ * The .java file is compiled using javac command to produce a .class file.
  * The .class file is executed using java command. These files contain bytecode.
  * 
  * One .java source file can contain multiple classes and each of these class will be compiled to separate .class files.
@@ -41,6 +41,48 @@ public class HelloWorld {
     // first method to be executed in any java application
     // main methods are generally defined in a public class
     public static void main(String[] args) {
+
         System.out.println("Hello, World!"); 
+
+        // Identifier naming rules
+        // 1. Can contain letters, digits, underscores, and dollar signs
+        // 2. Must begin with a letter, underscore, or dollar sign
+        // example: myVariable1, _myVariable, $myVariable
+        // 3. Cannot be a reserved keyword like public, class, static, void, int, etc.
+        // 4. Cannot contain spaces
+        // 5. Case sensitive
+        // example: myVariable and myvariable are different identifiers
+        // 6. Should be meaningful and descriptive
+
+        // Naming Conventions
+        // 1. Class names should be in PascalCase example: HelloWorld, MyFirstClass, StudentMonitorDetails
+        // 2. Method and variable names should be in camelCase example: myMethod, myVariable, findAverageMarks
+        // 3. Constants should be in UPPERCASE with words separated by underscores example: MAX_VALUE, MIN_VALUE
+
+        // Java is strictly typed language, meaning every variable must be declared with a data type
+        // Datatypes in Java
+        // Primitive Data Types:        byte, short, int, long, float, double, char, boolean
+        // Non-Primitive Data Types:    String, Arrays, Classes, Interfaces
+
+        byte b  = 10;            // 1 byte
+        short s = 100;          // 2 bytes    
+        int i   = 1000;           // 4 bytes
+        long l  = 10000L;        // 8 bytes
+        long l2 = 23_123_123L;  // underscores can be used to improve readability
+
+        // while working with floating point numbers, double is the default data type
+        // to specify a float, suffix the number with f or F
+        float f     = 10.5f;        // 4 bytes
+        double d    = 20.99;       // 8 bytes
+        double d2   = 123_456.789; // underscores can be used to improve readability
+
+        char c          = 'A';           // 2 bytes
+        boolean bool    = true;    // 1 bit
+
+        String str  = "Hello, Java!"; // String is a class, not a primitive data type
+
+        
+
+
     }
 }
