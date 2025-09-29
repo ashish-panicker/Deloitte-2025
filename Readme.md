@@ -3,7 +3,7 @@
 ## 1. Introduction to Java
 
 * **What is Java?**
-  Java is a **programming language** used to create applications that can run on any device (Windows, Mac, Linux, Android, etc.) without changing the code.
+  Java is a  strictly typed **programming language** used to create applications that can run on any device (Windows, Mac, Linux, Android, etc.) without changing the code.
 * **Why is it popular?**
 
   * Reliable and widely used in companies.
