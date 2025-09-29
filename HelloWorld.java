@@ -37,6 +37,8 @@
 // This would be compiled to HelloWorld.class
 // To run the program use command: java HelloWorld
 public class HelloWorld {
+    // var xyz = 100; // compilation error: 'var' is not allowed here
+
     // main method is the default entry point of any java application
     // first method to be executed in any java application
     // main methods are generally defined in a public class
@@ -64,25 +66,53 @@ public class HelloWorld {
         // Primitive Data Types:        byte, short, int, long, float, double, char, boolean
         // Non-Primitive Data Types:    String, Arrays, Classes, Interfaces
 
-        byte b  = 10;            // 1 byte
-        short s = 100;          // 2 bytes    
-        int i   = 1000;           // 4 bytes
-        long l  = 10000L;        // 8 bytes
-        long l2 = 23_123_123L;  // underscores can be used to improve readability
+        byte    b   = 10;            // 1 byte
+        short   s   = 100;          // 2 bytes    
+        int     i   = 1000;           // 4 bytes
+        long    l   = 10000L;        // 8 bytes
+        long    l2  = 23_123_123L;  // underscores can be used to improve readability
 
         // while working with floating point numbers, double is the default data type
         // to specify a float, suffix the number with f or F
-        float f     = 10.5f;        // 4 bytes
-        double d    = 20.99;       // 8 bytes
-        double d2   = 123_456.789; // underscores can be used to improve readability
+        float   f    = 10.5f;        // 4 bytes
+        double  d    = 20.99;       // 8 bytes
+        double  d2   = 123_456.789; // underscores can be used to improve readability
 
-        char c          = 'A';           // 2 bytes
+        char    c       = 'A';     // 2 bytes
         boolean bool    = true;    // 1 bit
 
-        String str  = "Hello, Java!"; // String is a class, not a primitive data type
+        String  str  = "Hello, Java!"; // String is a class, not a primitive data type
 
+        // Local Type Inference using var keyword (available from Java 10 onwards)
+        var     number  = 100;          // int
+        var     pi      = 3.14;         // double
+        var     name    = "Ashish";     // String
+        // var x = null; // compilation error: cannot infer type for local variable x initialized to 'null'
+        // while using var keyword 
+        // 1. variable must be initialized at the time of declaration
+        // 2. cannot be initialized to null
+        // 3. can only be used for local variables inside methods
+
+        // multi line string
+        String welcomeMessage =     "Hello," +
+                                    " World!" +
+                                    " Welcome to Java.";
+
+        System.out.println(welcomeMessage); 
         
+        String formattedEmailMesage =   "Hello Ashish,\n" + 
+                                        "This is a formatted email message.\n" +
+                                        "Regards,\n" +
+                                        "Deloitte-2025";
+        System.out.println(formattedEmailMesage);
 
-
+        // text blocks (available from Java 13 onwards)
+        String emailMessage = """
+                            Hello Ashish,
+                            This is a formatted email message.
+                            Regards,
+                            Deloitte-2025
+                """;
+        System.out.println(emailMessage);
     }
 }
