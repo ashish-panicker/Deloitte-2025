@@ -20,7 +20,7 @@ package org.example;
 
 /**
  * Java source file structure
- * 1. Package Declaration (optional), if present it must be the first line, 
+ * 1. Package Declaration (optional), if present it must be the first line,
  * only one package statement allowed in a file
  * 2. Import Statements (optional), if present they must come after the package
  * declaration, can have multiple import statements
@@ -29,15 +29,30 @@ package org.example;
  * classes/interfaces
  */
 
- // import all the classes from a package using wildcard '*'
+// import all the classes from a package using wildcard '*'
+
+import java.time.LocalDate;
 import java.util.*;
 // import a specific class from a package
 import java.io.File;
 // the java.lang package is imported by default
 import java.lang.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println();
+        // Initialization before use: all local variables must be initialized before being used
+        // Local variables are declared within a method, and must be initialized explicitly
+        int x = 0;
+        int y = 10;
+        System.out.println(x + y);
+
+        Employee emp1, emp2, emp3; // declaring an object
+        // creating a new object, we use the new keyword
+        // Java memory management is performed by the JVM
+        emp1 = new Employee();
+        emp2 = new Employee(100, "Ashish", LocalDate.of(1990, 10, 10));
+        emp3 = new Employee(101, "John", "Manager", "Sales", LocalDate.of(1987, 10, 10));
+
     }
 }
 
