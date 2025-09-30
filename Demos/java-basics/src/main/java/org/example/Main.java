@@ -46,17 +46,25 @@ public class Main {
         int y = 10;
         System.out.println(x + y);
 
-        Employee emp1, emp2, emp3; // declaring an object
+//        Employee emp1, emp2, emp3; // declaring an object
         // creating a new object, we use the new keyword
         // Java memory management is performed by the JVM
-        emp1 = new Employee();
-        emp2 = new Employee(100, "Ashish", LocalDate.of(1990, 10, 10));
-        emp3 = new Employee(101, "John", "Manager", "Sales", LocalDate.of(1987, 10, 10));
+//        emp1 = new Employee();
+//        emp2 = new Employee(100, "Ashish", LocalDate.of(1990, 10, 10));
+//        emp3 = new Employee(101, "John", "Manager",
+//                    "Sales", LocalDate.of(1987, 10, 10));
+//        Student s1 = new Student();
+//        s1.setRollNumber(1);
+//        s1.setEmail("user@someemail.com");
+//        s1.setFullName("John Smith");
+
+        Student s2 = new Student();
+        Student.setTopics(new String[]{"A", "B", "C"});
 
     }
 }
 
-/**
+/***
  * Maven project Structure
  * project-name
  *  src
@@ -68,3 +76,4 @@ public class Main {
  *          resources [Additional configuration]
  *  pom.xml [Maven Configuration]
  */
+
