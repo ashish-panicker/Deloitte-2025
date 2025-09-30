@@ -56,6 +56,13 @@ class Square extends Shape {
     public void draw() {
         System.out.println("Drawing shape of a circle with " + super.getColour());
     }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side=" + side +
+                '}';
+    }
 }
 
 class Circle extends Shape {
@@ -89,6 +96,13 @@ class Circle extends Shape {
     public void draw() {
         System.out.println("Drawing shape of a square with " + super.getColour());
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
 }
 
 public class ShapeMain {
@@ -101,6 +115,7 @@ public class ShapeMain {
         circle.setColour("red");
         circle.area(); // Will the area of the circle be displayed?
         circle.draw();
+        System.out.println(circle);
 
         System.out.println();
 
@@ -109,5 +124,7 @@ public class ShapeMain {
         square.setColour("green");
         square.area();
         square.draw();
+        System.out.println(square);
+
     }
 }

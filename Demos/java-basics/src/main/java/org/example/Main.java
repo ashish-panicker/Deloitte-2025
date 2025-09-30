@@ -67,6 +67,13 @@ public class Main {
         s3.append(" World");
         s3.append(" from");
 
+        // Boxing: Converting primitive type into wrapper object
+        Integer x2 = Integer.valueOf(10);
+        Integer x3 = 20; // Auto Boxing
+
+        // Unboxing: Wrapper back to primitive
+        int x4 = x3.intValue();
+        int x5 = x2; // Auto unboxing
     }
 }
 
