@@ -55,6 +55,8 @@ public class GameBox {
     public static void main(String[] args) {
 
         Game boardGame = new BoardGame("Board", 10, "Game");
+        // start() method is present in Game, and overridden in BoardGame class
+
         Game videoGame = new VideoGame("Video", 10, "PC");
 
         boardGame.start();
