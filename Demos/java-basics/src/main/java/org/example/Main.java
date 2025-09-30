@@ -61,6 +61,12 @@ public class Main {
         Student s2 = new Student();
         Student.setTopics(new String[]{"A", "B", "C"});
 
+        StringBuilder s3 = new StringBuilder();
+        // StringBuffer sb = new StringBuffer(); // older
+        s3.append("Hello");
+        s3.append(" World");
+        s3.append(" from");
+
     }
 }
 
