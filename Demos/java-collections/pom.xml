@@ -7,6 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>java-collections</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Java Collections demo project</name>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -14,4 +15,27 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!--
+        Maven Local Repository:     C:\Users\<username>\.m2\repository
+        Maven Central Repository:   https://repo.maven.apache.org/maven2/
+        To download and install the dependency we can use: mvn install
+    -->
+    <dependencies>
+        <!--
+            https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.0.0
+            C:\Users\Ashis\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.0
+        -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>6.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>6.0.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
