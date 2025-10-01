@@ -27,9 +27,9 @@ import java.sql.*;
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
-        String userName = "";
-        String password = "";
-        String url = "";
+        String userName = "root";
+        String password = "password";
+        String url = "jdbc:mysql://localhost:3306/dbname?useSSL=false";
 
         // These 2 steps are optional with latest mysql driver
 //         Driver d = new Driver(); // Create driver instance
