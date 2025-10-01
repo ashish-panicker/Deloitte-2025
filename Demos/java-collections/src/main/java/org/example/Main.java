@@ -30,10 +30,12 @@ package org.example;
  */
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -184,9 +186,53 @@ public class Main {
         config.clear(); // removes all key-value pairs from the map
         System.out.println("Config after clearing the map: " + config);
     }
+
+    static void queue() {
+        // Queue is a collection designed for holding elements prior to processing.
+        // It follows the First-In-First-Out (FIFO) principle.
+        // Common implementations of the Queue interface include LinkedList,
+        // PriorityQueue, and ArrayDeque.
+        Queue<String> queue = new LinkedList<>();
+        queue.add("Task 1");
+        queue.add("Task 2");
+        queue.add("Task 3");
+        System.out.println("Queue: " + queue);
+        System.out.println("Size of the queue: " + queue.size());
+        System.out.println("Peek: " + queue.peek()); // Retrieves, but does not remove, the head of the queue
+        System.out.println("Poll: " + queue.poll()); // Retrieves and removes the head of the queue
+        System.out.println("Queue after poll: " + queue);
+        System.out.println("Contains 'Task 2'? " + queue.contains("Task 2"));
+        queue.clear(); // removes all elements from the queue
+        System.out.println("Queue after clearing: " + queue);
+    }
+
+    static void deque() {
+        // Deque (Double-Ended Queue) is a linear collection that supports the
+        // insertion and removal of elements from both ends.
+        // It can be used as both a stack (LIFO) and a queue (FIFO).
+        // Common implementations of the Deque interface include ArrayDeque and
+        // LinkedList.
+        Deque<String> deque = new LinkedList<>();
+        deque.addFirst("Task 1");
+        deque.addLast("Task 2");
+        deque.addLast("Task 3");
+        System.out.println("Deque: " + deque);
+        System.out.println("Size of the deque: " + deque.size());
+        System.out.println("Peek First: " + deque.peekFirst()); // Retrieves, but does not remove, the first element
+        System.out.println("Peek Last: " + deque.peekLast()); // Retrieves, but does not remove, the last element
+        System.out.println("Poll First: " + deque.pollFirst()); // Retrieves and removes the first element
+        System.out.println("Poll Last: " + deque.pollLast()); // Retrieves and removes the last element
+        System.out.println("Deque after polls: " + deque);
+        System.out.println("Contains 'Task 2'? " + deque.contains("Task 2"));
+        deque.clear(); // removes all elements from the deque
+        System.out.println("Deque after clearing: " + deque);
+    }
+
     public static void main(String[] args) {
         System.out.println("--------------------------------------------------");
-        simpleHashMap();
+        queue();
+        System.out.println("--------------------------------------------------");
+        deque();
         System.out.println("--------------------------------------------------");
     }
 }
