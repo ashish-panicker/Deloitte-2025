@@ -37,6 +37,16 @@ public class Main {
 //         Class.forName("com.mysql.cj.jdbc.Driver");
 //         DriverManager.registerDriver(d); // Register driver
 
+//        create table customers(
+//                customerNumber int            not null primary key,
+//                customerName   varchar(100)   not null,
+//                phone          varchar(50)    not null,
+//                city           varchar(50)    not null,
+//                creditLimit    decimal(10, 2) not null
+//        );
+
+
+
         // Obtain a connection
         Connection connection = DriverManager.getConnection(url, userName, password);
 
