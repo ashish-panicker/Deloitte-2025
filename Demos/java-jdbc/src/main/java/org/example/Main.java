@@ -1,8 +1,5 @@
 package org.example;
 
-
-import com.mysql.cj.jdbc.Driver;
-
 import java.sql.*;
 
 /**
