@@ -1,6 +1,7 @@
 ## **1. Introduction to Web Services**
 
 **Definition:**
+
 A **Web Service** is a software system designed to support interoperable machine-to-machine communication over a network (usually HTTP). Web services allow applications to communicate and exchange data, regardless of the underlying platform or language.
 
 **Key Features:**
