@@ -11,11 +11,12 @@ import java.util.Objects;
 
 /**
  * CREATE TABLE students (
- * s_id BIGINT PRIMARY KEY AUTO_INCREMENT,
- * s_name VARCHAR(100) NOT NULL,
- * s_age INT NOT NULL,
- * s_email VARCHAR(100) UNIQUE
+ *  s_id BIGINT PRIMARY KEY AUTO_INCREMENT,
+ *  s_name VARCHAR(100) NOT NULL,
+ *  s_age INT NOT NULL,
+ *  s_email VARCHAR(100) UNIQUE
  * );
+ *
  * <p>
  * Rules for creating a JPA entity:
  * 1. The class must be annotated with @Entity.
@@ -44,7 +45,7 @@ public class Student { // implementing java.io.Serializable is optional but reco
     // Optional: specify generation strategy, e.g., AUTO, IDENTITY, SEQUENCE, TABLE
     @Id
     @Column(name = "s_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Long id; // Primary key field
 
     // Optional: specify column details, e.g., not null, length = 100
