@@ -119,10 +119,6 @@ class Student {
 ### JPA Relations
 ### JPQL
 
-Great question, Ashish 👍 — this is where the **story of JPA** becomes interesting because it was born out of the pain developers faced with **JDBC and EJB Entity Beans**. Let’s go step by step.
-
----
-
 ## **Evolution of JPA**
 
 ### 1. The Early Days – JDBC (Java Database Connectivity)
