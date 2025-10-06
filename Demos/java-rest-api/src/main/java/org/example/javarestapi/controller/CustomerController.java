@@ -1,6 +1,5 @@
 package org.example.javarestapi.controller;
 
-import lombok.Getter;
 import org.example.javarestapi.model.Customer;
 import org.example.javarestapi.service.CustomerService;
 import org.springframework.http.HttpStatus;
